@@ -6,7 +6,7 @@ export const INITIAL_PARTIES = [
     name: 'ישר! עם איזנקוט',
     seats: 21,
     color: '#1e3a8a',
-    // [מדיני, כלכלי, דת ומדינה, משפט, זהות לאומית, יחסי חוץ]
+    // [foreign affairs, economic, religion & state, legal, national identity, foreign relations]
     pos: [7, 7, 8, 10, 6, 7],
   },
   {
@@ -75,14 +75,14 @@ export const INITIAL_PARTIES = [
   {
     id: 'raam',
     name: 'רע"מ',
-    seats: 8, // שים לב: סך המושבים כרגע 114
+    seats: 8, // Note: current total seats is 114
     color: '#475569',
     pos: [8, 8, 2, 7, 9, 7],
   },
 ];
 
 export const INITIAL_RELATIONS = {
-  // גוש נתניהו
+  // Netanyahu bloc
   'likud-tziyonut_zehut': 2,
   'tziyonut_zehut-likud': 2,
   'likud-otzma_yehudit': 3,
@@ -94,7 +94,7 @@ export const INITIAL_RELATIONS = {
   'shas-yahadut_hatorah': 1,
   'yahadut_hatorah-shas': 1,
 
-  // גוש איזנקוט / מרכז-שמאל
+  // Eisenkot bloc / center-left
   'eisenkot-beyachad': 2,
   'beyachad-eisenkot': 2,
   'eisenkot-demokratim': 3,
@@ -104,7 +104,7 @@ export const INITIAL_RELATIONS = {
   'beyachad-demokratim': 3,
   'demokratim-beyachad': 3,
 
-  // מתח חילוני-חרדי
+  // Secular-Haredi tension
   'yisrael_beytenu-shas': 4,
   'shas-yisrael_beytenu': 4,
   'yisrael_beytenu-yahadut_hatorah': 6,
@@ -112,7 +112,7 @@ export const INITIAL_RELATIONS = {
   'demokratim-yahadut_hatorah': 7,
   'yahadut_hatorah-demokratim': 6,
 
-  // יחסי ליכוד מול מפלגות אחרות (כולל א-סימטריה)
+  // Likud relations toward other parties (including asymmetry)
   'eisenkot-likud': 7,
   'beyachad-likud': 7,
   'likud-beyachad': 3,
@@ -120,7 +120,7 @@ export const INITIAL_RELATIONS = {
   'likud-demokratim': 2,
   'meshutefet-likud': 7,
 
-  // חרמות ווטו מוחלטים ויחסים מורכבים נוספים
+  // Absolute boycotts/vetoes and additional complex relations
   'otzma_yehudit-meshutefet': 7,
   'meshutefet-otzma_yehudit': 7,
   'otzma_yehudit-raam': 7,
